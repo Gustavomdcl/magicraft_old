@@ -41,6 +41,6 @@ io.on('connection', function(socket){
   });
 });
 
-http.listen(80, function(){  
-  console.log('servidor rodando em localhost:80');
+http.listen(21082, function(){  
+  console.log('servidor rodando em localhost:21082');
 });
