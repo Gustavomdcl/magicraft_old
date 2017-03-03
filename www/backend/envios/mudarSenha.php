@@ -46,7 +46,7 @@
 		$Subject = $assunto;
 		$Message = $mensagemHTML;
 
-		$Host = substr(strstr($usuario, '@'), 1);
+		$Host = 'smtpi.'.substr(strstr($usuario, '@'), 1);
 		$Username = $usuario;
 		$Password = $senha;
 		$Port = "587";
