@@ -10,3 +10,7 @@ git add .
 git commit -m "Arquivos adicionados da hospedagem"
 git push origin master
 git pull origin master
+git status
+git add .
+git commit -m "Sei não"
+git push origin master
