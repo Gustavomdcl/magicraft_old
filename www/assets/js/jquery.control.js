@@ -16,46 +16,48 @@ function pressionaTecla(e) {
 	if(walking==false){
 		//Se o a tecla pressionada da variável 'e' for refere ao número 39 -right- (http://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes)
 		if (e.keyCode==39) {
-			userAnimation('right');
-			motion_validate_x(1);
+			motion_validate_x(1,'right');
 		} 
 		//Se o a tecla pressionada da variável 'e' for refere ao número 37 -left- (http://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes)
 		else if (e.keyCode==37) {
-			userAnimation('left');
-			motion_validate_x(-1);
+			motion_validate_x(-1,'left');
 		}
 		//Se o a tecla pressionada da variável 'e' for refere ao número 38 -up- (http://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes)
 		else if (e.keyCode==38) {
-			userAnimation('up');
-			motion_validate_y(-1);
+			motion_validate_y(-1,'up');
 		}
 		//Se o a tecla pressionada da variável 'e' for refere ao número 40 -down- (http://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes)
 		else if (e.keyCode==40) {
-			userAnimation('down');
-			motion_validate_y(1);
+			motion_validate_y(1,'down');
 		}
 	}
 }
 
 /************ WALK **************/
 
-function motion_validate_x(e) {
+function motion_validate_x(e, position) {
 	var next_placement = grid_column[user_x+e].grid_line[user_y];
 	if (next_placement.state=='null'){
 		walking=true;
-		move(user_x+e, user_y, e, 'x');
+		move(user_x+e, user_y, e, 'x', position);
+	} else {
+		userAnimation(position);
 	}
 }
 
-function motion_validate_y(e) {
+function motion_validate_y(e, position) {
 	var next_placement = grid_column[user_x].grid_line[user_y+e];
 	if (next_placement.state=='null'){
 		walking=true;
-		move(user_x, user_y+e, e, 'y');
+		move(user_x, user_y+e, e, 'y', position);
+	} else {
+		userAnimation(position);
 	}
 }
 
-function move(new_x, new_y, vetor, direction) {
+//Socketio chega aqui
+function move(new_x, new_y, vetor, direction, position) {
+	userAnimation(position);
 	var velocity = 200;
 	if(direction=='y'){
 		grid_top_add = grid_top_add+(vetor*(square));
@@ -89,13 +91,13 @@ function move(new_x, new_y, vetor, direction) {
 
 function userAnimation(destination) {
 	if(destination=='right'){
-		$('.user').css('background-image','url(assets/img/right.gif)');
+		$('.user').css('background-image','url(../assets/img/right.gif)');
 	} else if(destination=='left'){
-		$('.user').css('background-image','url(assets/img/left.gif)');
+		$('.user').css('background-image','url(../assets/img/left.gif)');
 	} else if(destination=='up'){
-		$('.user').css('background-image','url(assets/img/up.gif)');
+		$('.user').css('background-image','url(../assets/img/up.gif)');
 	} else if(destination=='down'){
-		$('.user').css('background-image','url(assets/img/down.gif)');
+		$('.user').css('background-image','url(../assets/img/down.gif)');
 	}
 }
 

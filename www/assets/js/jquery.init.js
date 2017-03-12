@@ -144,7 +144,7 @@ $.each(environment_figures, function(number, val){
 	var environment_x = grid_column[val.position_x].position_x;
 	var environment_y = grid_column[val.position_x].grid_line[val.position_y].position_y;
 	$('#grid').append('<div class="environment_figure environment_figure-'+val.position_x+'-'+val.position_y+'">figure</div>');
-	$('.environment_figure-'+val.position_x+'-'+val.position_y).css('width',square*val.width).css('height',square*val.height).css('left',environment_x).css('top',environment_y).css('background-image','url(assets/img/enviromnent_figure/'+val.background+')');
+	$('.environment_figure-'+val.position_x+'-'+val.position_y).css('width',square*val.width).css('height',square*val.height).css('left',environment_x).css('top',environment_y).css('background-image','url(../assets/img/enviromnent_figure/'+val.background+')');
 });
 
 /* ========== Place Players ========== */
@@ -173,30 +173,34 @@ $.each(player_elements, function(number, val){
 	player_place(val.position_x, val.position_y);
 });
 
-function player_place(place_x, place_y) {
+function player_place(place_x, place_y, playerName) {
 	var player_x = grid_column[place_x].position_x;
 	var player_y = grid_column[place_x].grid_line[place_y].position_y;
-	$('#grid').append('<div class="player player-'+place_x+'-'+place_y+'">player-'+place_x+'-'+place_y+'</div>');
-	$('.player-'+place_x+'-'+place_y).css('width',square-1).css('height',square-1).css('left',player_x).css('top',player_y);
+	$('#grid').append('<div class="player '+playerName+'" style="width:'+(square-1)+'px;height:'+(square-1)+'px;left:'+player_x+'px;top:'+player_y+'px;">player-'+place_x+'-'+place_y+'</div>');
 }
+
+//First time getting on
+/*socket.on('first user', function(user_data){
+	if (user_data.split('/')[0]!=userName) {
+		var thisUserName = user_data.split('/')[0];
+		var thisUserTop = user_data.split('/')[1];
+		var thisUserLeft = user_data.split('/')[2];
+		var thisUserTexto = '';
+		if(user_data.split('/')[3]!=''){
+			thisUserTexto = '<p>'+user_data.split('/')[3]+'</p>';
+		}
+		var thisUserAction = 'criarUser';
+		$('#game-canvas').prepend('<div class="user '+thisUserName+'" style="top: '+thisUserTop+'px; left: '+thisUserLeft+'px;">'+thisUserTexto+'</div>');
+	}
+});*/
 
 /* ========== Place User ========== */
 
 var user_placed = false;
+var user_name = '';
 var user_x, user_y;
 var grid_middle_x = parseInt(column/2);
 var grid_middle_y = parseInt(line/2);
-//Código antigo de colocar o user no inicio de tudo
-/*$.each(grid_column, function(number_c, value_c){
-	if(user_placed == true){ return false; }
-	$.each(value_c.grid_line, function(number_l, value_l){
-		if(value_l.state=='null'){
-			user_placement(value_c.position_x, value_l.position_y, number_c, number_l);
-			user_placed = true;
-			return false;
-		}
-	});
-});*/
 //Código novo de colocar no meio da tela
 var loading_top;
 var loading_left;
@@ -217,8 +221,13 @@ for(var a = grid_middle_x; a < column; a++){//column
 }
 
 function user_placement(place_x, place_y, number_x, number_y) {
+	//criarNome
+	var possible = 'abcdefghijklmnopqrstuvwxyz0123456789';
+	for( var i=0; i < 3; i++ ) {
+		user_name += possible.charAt(Math.floor(Math.random() * possible.length));
+	}
 	$('#grid').append('<div class="user">you</div>');
-	$('.user').css('width',square-1).css('height',square-1).css('left',place_x).css('top',place_y).css('background-image','url(assets/img/down.gif)');
+	$('.user').addClass(user_name).css('width',square-1).css('height',square-1).css('left',place_x).css('top',place_y).css('background-image','url(../assets/img/down.gif)');
 	user_x = number_x;
 	user_y = number_y;
 }

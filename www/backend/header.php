@@ -1,13 +1,13 @@
 <?php
-  require_once ("backend/seguranca.php");
+  include dirname(__FILE__)."/seguranca.php";
   protegePagina();
 
   // VARIAVEIS GLOBAIS ==================================
   $usuarioLogadoID = $_SESSION['usuarioUserID'];
   $usuarioLogadoEmail = $_SESSION['usuarioUserNome'];
 
-  require_once("backend/conecta.php");
-  require_once("backend/executa.php");
+  include dirname(__FILE__)."/conecta.php";
+  include dirname(__FILE__)."/executa.php";
 
   // VALIDA PERFIL ======================================
   $perfilCriado = mysql_query("SELECT * FROM PP_USER WHERE email = '$usuarioLogadoEmail'");
@@ -30,7 +30,7 @@
     }
 
   } else {
-    header("Location: index.php");
+    header("Location: ../index.php");
   }
 
 ?>
