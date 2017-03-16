@@ -1,10 +1,35 @@
-var app = require('express')();  
-var http = require('http').Server(app);  
-var io = require('socket.io')(http);
+//https://www.npmjs.com/package/php-express
 
-app.get('/', function(req, res){  
-  res.sendFile(__dirname + '/index.html');
+//http://stackoverflow.com/questions/17209717/how-to-integrate-nodejs-socket-io-and-php NODE+PHP+SOCKETIO
+
+//https://github.com/socketio/socket.io/issues/2258 SAVE SESSION DATA
+var express = require('express');
+var app = express();  
+// must specify options hash even if no options provided!
+var phpExpress = require('php-express')({
+ 
+  // assumes php is in your PATH
+  binPath: 'php'
 });
+
+// set view engine to php-express
+app.set('views', './views');
+app.engine('php', phpExpress.engine);
+app.set('view engine', 'php');
+
+app.get('/', function(req, res){
+  res.render('index.php');
+});
+ 
+// routing all .php file to php-express
+app.all(/.+\.php$/, phpExpress.router);
+
+var server = app.listen(3000, function () {
+  var host = server.address().address;
+  var port = server.address().port;
+  console.log('PHPExpress app listening at http://%s:%s', host, port);
+});
+var io     = require('socket.io').listen(server);
 
 //Storage
 var allConnectedClients = Object.keys(io.sockets.connected);
@@ -39,8 +64,4 @@ io.on('connection', function(socket){
     console.log('message: ' + user_data);
     io.sockets.emit('user change', user_data);
   });
-});
-
-http.listen(3000, function(){  
-  console.log('servidor rodando em localhost:3000');
 });

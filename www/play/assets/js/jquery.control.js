@@ -85,19 +85,20 @@ function move(new_x, new_y, vetor, direction, position) {
 	});
 	user_x = new_x;
 	user_y = new_y;
+	connecta(user_name, new_y, new_x, '', 'moveUser', direction, position);
 }
 
 /************ WALK ANIMATION **************/
 
 function userAnimation(destination) {
 	if(destination=='right'){
-		$('.user').css('background-image','url(../assets/img/right.gif)');
+		$('.user').css('background-image','url(http://localhost/magicraft/www/play/assets/img/right.gif)');
 	} else if(destination=='left'){
-		$('.user').css('background-image','url(../assets/img/left.gif)');
+		$('.user').css('background-image','url(http://localhost/magicraft/www/play/assets/img/left.gif)');
 	} else if(destination=='up'){
-		$('.user').css('background-image','url(../assets/img/up.gif)');
+		$('.user').css('background-image','url(http://localhost/magicraft/www/play/assets/img/up.gif)');
 	} else if(destination=='down'){
-		$('.user').css('background-image','url(../assets/img/down.gif)');
+		$('.user').css('background-image','url(http://localhost/magicraft/www/play/assets/img/down.gif)');
 	}
 }
 

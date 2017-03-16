@@ -2,8 +2,8 @@
 // IDENTIFICA LOGIN ===================================
 //Inicia funções de conexão com o servidor e funções de segurança
 require_once ("backend/seguranca.php");
-//Identifica se existe se já existe uma sessão de login e redireciona para a página /play/
-if(isset($_SESSION['usuarioUserID'])){ header("Location: play/"); }
+//Identifica se existe se já existe uma sessão de login e redireciona para a página painel.php
+if(isset($_SESSION['usuarioUserID'])){ header("Location: painel.php"); }
 
 // ERROR ==============================================
 //Retorno de <form> por GET (na url)

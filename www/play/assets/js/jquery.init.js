@@ -144,7 +144,7 @@ $.each(environment_figures, function(number, val){
 	var environment_x = grid_column[val.position_x].position_x;
 	var environment_y = grid_column[val.position_x].grid_line[val.position_y].position_y;
 	$('#grid').append('<div class="environment_figure environment_figure-'+val.position_x+'-'+val.position_y+'">figure</div>');
-	$('.environment_figure-'+val.position_x+'-'+val.position_y).css('width',square*val.width).css('height',square*val.height).css('left',environment_x).css('top',environment_y).css('background-image','url(../assets/img/enviromnent_figure/'+val.background+')');
+	$('.environment_figure-'+val.position_x+'-'+val.position_y).css('width',square*val.width).css('height',square*val.height).css('left',environment_x).css('top',environment_y).css('background-image','url(http://localhost/magicraft/www/play/assets/img/enviromnent_figure/'+val.background+')');
 });
 
 /* ========== Place Players ========== */
@@ -227,7 +227,7 @@ function user_placement(place_x, place_y, number_x, number_y) {
 		user_name += possible.charAt(Math.floor(Math.random() * possible.length));
 	}
 	$('#grid').append('<div class="user">you</div>');
-	$('.user').addClass(user_name).css('width',square-1).css('height',square-1).css('left',place_x).css('top',place_y).css('background-image','url(../assets/img/down.gif)');
+	$('.user').addClass(user_name).css('width',square-1).css('height',square-1).css('left',place_x).css('top',place_y).css('background-image','url(http://localhost/magicraft/www/play/assets/img/down.gif)');
 	user_x = number_x;
 	user_y = number_y;
 }

@@ -13,7 +13,7 @@
 			header("Location: ../index.php?error=emailnaoaprovado");
 		} else {	
 			if (validaUsuario($email, $senha) == true) {
-				header("Location: ../play/");
+				header("Location: ../painel.php");
 			} else {
 				expulsaVisitante();
 			}

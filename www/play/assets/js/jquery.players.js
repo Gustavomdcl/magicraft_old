@@ -4,13 +4,13 @@
 
 /* ===== SOCKET IO ===== */
 
-/*function connecta(nome, top, left, texto, action, direction, position) {
-	var user_data = nome+'/'+top+'/'+left+'/'+texto+'/'+action;
+function connecta(nome, top, left, texto, action, direction, position) {
+	var user_data = nome+'/'+top+'/'+left+'/'+texto+'/'+action+'/'+direction+'/'+position;
 	socket.emit('user change', user_data);
 	socket.emit('data', user_data);
 }
 
-socket.on('user change', function(user_data){
+/*socket.on('user change', function(user_data){
 	if (user_data.split('/')[0]!=userName) {
 		var thisUserName = user_data.split('/')[0];
 		var thisUserTop = user_data.split('/')[1];
