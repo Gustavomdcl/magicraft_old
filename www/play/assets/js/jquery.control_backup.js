@@ -16,68 +16,51 @@ function pressionaTecla(e) {
 	if(walking==false){
 		//Se o a tecla pressionada da variável 'e' for refere ao número 39 -right- (http://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes)
 		if (e.keyCode==39) {
-			user_motion('right', user_name);
+			motion_validate_x(1,'right');
 		} 
 		//Se o a tecla pressionada da variável 'e' for refere ao número 37 -left- (http://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes)
 		else if (e.keyCode==37) {
-			user_motion('left', user_name);
+			motion_validate_x(-1,'left');
 		}
 		//Se o a tecla pressionada da variável 'e' for refere ao número 38 -up- (http://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes)
 		else if (e.keyCode==38) {
-			user_motion('up', user_name);
+			motion_validate_y(-1,'up');
 		}
 		//Se o a tecla pressionada da variável 'e' for refere ao número 40 -down- (http://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes)
 		else if (e.keyCode==40) {
-			user_motion('down', user_name);
+			motion_validate_y(1,'down');
 		}
-	}
-}
-
-function user_motion(vetor, thisName) {
-	var motion;
-	var axis;
-	var current_x = $('.'+thisName).data('x');
-	var current_y = $('.'+thisName).data('y');
-	var next_x = current_x;
-	var next_y = current_y;
-	if (vetor=='right') {
-		axis = 'x';
-		motion = 1;
-		next_x = $('.'+thisName).data('x')+motion;
-	} else if (vetor=='left') {
-		axis = 'x';
-		motion = -1;
-		next_x = $('.'+thisName).data('x')+motion;
-	} else if (vetor=='up') {
-		axis = 'y';
-		motion = -1;
-		next_y = $('.'+thisName).data('y')+motion;
-	} else if (vetor=='down') {
-		axis = 'y';
-		motion = 1;
-		next_y = $('.'+thisName).data('y')+motion;
-	}
-	var next_placement = grid_column[next_x].grid_line[next_y];
-	if (next_placement.state=='null'){
-		walking=true;
-		$('.'+thisName).data('x',next_x);
-		$('.'+thisName).data('y',next_y);
-		move(next_x, next_y, motion, axis, vetor, thisName);
-		work_grid(current_x, current_y, 'null');
-		work_grid(next_x, next_y, thisName);
-	} else {
-		user_vetor(vetor, thisName);
 	}
 }
 
 /************ WALK **************/
 
+function motion_validate_x(e, position) {
+	var next_placement = grid_column[user_x+e].grid_line[user_y];
+	if (next_placement.state=='null'){
+		walking=true;
+		move(user_x+e, user_y, e, 'x', position, user_name);
+	} else {
+		userAnimation(position, user_name);
+	}
+}
+
+function motion_validate_y(e, position) {
+	var next_placement = grid_column[user_x].grid_line[user_y+e];
+	if (next_placement.state=='null'){
+		walking=true;
+		move(user_x, user_y+e, e, 'y', position, user_name);
+	} else {
+		userAnimation(position, user_name);
+	}
+}
+
 //Socketio chega aqui
 function move(new_x, new_y, vetor, direction, position, thisName) {
-	user_vetor(position, thisName);
+	userAnimation(position, thisName);
 	var velocity = 200;
 	if (user_name==thisName) {
-		connecta(new_x, new_y, thisName, position);
+		connecta(thisName, new_y, new_x, '', 'moveUser', direction, position);
 		if(direction=='y'){
 			grid_top_add = grid_top_add+(vetor*(square));
 			var this_top = grid_top+(-1*(grid_top_add));
@@ -108,6 +91,18 @@ function move(new_x, new_y, vetor, direction, position, thisName) {
 }
 
 /************ WALK ANIMATION **************/
+
+function userAnimation(destination, thisName) {
+	if(destination=='right'){
+		$('.'+thisName).css('background-image','url(http://localhost/magicraft/www/play/assets/img/right.gif)');
+	} else if(destination=='left'){
+		$('.'+thisName).css('background-image','url(http://localhost/magicraft/www/play/assets/img/left.gif)');
+	} else if(destination=='up'){
+		$('.'+thisName).css('background-image','url(http://localhost/magicraft/www/play/assets/img/up.gif)');
+	} else if(destination=='down'){
+		$('.'+thisName).css('background-image','url(http://localhost/magicraft/www/play/assets/img/down.gif)');
+	}
+}
 
 /**========== SCROLL SETAS FIREFOX ==========**/	
 /**Script para desativar scroll com setas no firefox (buga a navegação em baixa resolução se não tiver esse script)**/

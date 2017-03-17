@@ -16,8 +16,9 @@ io.sockets.on('connection', function (client) {
       //Vai emitir somente para esse novo client/socket
       client.emit('first user', currentConnections[allConnectedClients[i]].clientData);
     }
+    client.emit('start placement', 'start');
     currentConnections[client.id] = {socket: client};
-    client.on('data', function (somedata) {  
+    client.on('data', function (somedata) {
         currentConnections[client.id].clientData = somedata; 
         allConnectedClients = Object.keys(io.sockets.connected);
         //SOCKET ID = console.log('socket: '+currentConnections[client.id].socket.id);
