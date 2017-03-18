@@ -67,7 +67,7 @@ $.each(environment_figures, function(number, val){
 	var environment_x = grid_column[val.position_x].position_x;
 	var environment_y = grid_column[val.position_x].grid_line[val.position_y].position_y;
 	$('#grid').append('<div class="environment_figure environment_figure-'+val.position_x+'-'+val.position_y+'">figure</div>');
-	$('.environment_figure-'+val.position_x+'-'+val.position_y).css('width',square*val.width).css('height',square*val.height).css('left',environment_x).css('top',environment_y).css('background-image','url(/assets/img/enviromnent_figure/'+val.background+')');
+	$('.environment_figure-'+val.position_x+'-'+val.position_y).css('width',square*val.width).css('height',square*val.height).css('left',environment_x).css('top',environment_y).css('background-image','url(http://magicraft.life/game/assets/img/enviromnent_figure/'+val.background+')');
 });
 
 /* ========== Place Players ========== */
