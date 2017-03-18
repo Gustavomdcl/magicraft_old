@@ -1,0 +1,300 @@
+2017-03-18 08:55:58: [PM2][WORKER] Started with refreshing interval: 30000
+2017-03-18 08:55:58: [[[[ PM2/God daemon launched ]]]]
+2017-03-18 08:55:58: BUS system [READY] on port /home/magicraft/.pm2/pub.sock
+2017-03-18 08:55:58: RPC interface [READY] on port /home/magicraft/.pm2/rpc.sock
+2017-03-18 08:55:58: [Watch] Start watching 0
+2017-03-18 08:55:58: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:55:58: App name:index id:0 online
+2017-03-18 08:58:09: Change detected on path _rubbish for app index - restarting
+2017-03-18 08:58:09: Stopping app:index id:0
+2017-03-18 08:58:09: App [index] with id [0] and pid [48989], exited with code [0] via signal [SIGINT]
+2017-03-18 08:58:09: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:09: App name:index id:0 online
+2017-03-18 08:58:09: Change detected on path _rubbish/__index.js for app index - restarting
+2017-03-18 08:58:09: Stopping app:index id:0
+2017-03-18 08:58:09: App [index] with id [0] and pid [1697], exited with code [0] via signal [SIGINT]
+2017-03-18 08:58:09: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:09: App name:index id:0 online
+2017-03-18 08:58:09: Change detected on path _rubbish/_index.js for app index - restarting
+2017-03-18 08:58:09: Stopping app:index id:0
+2017-03-18 08:58:09: App [index] with id [0] and pid [1702], exited with code [0] via signal [SIGINT]
+2017-03-18 08:58:09: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:09: App name:index id:0 online
+2017-03-18 08:58:10: Change detected on path js for app index - restarting
+2017-03-18 08:58:10: Stopping app:index id:0
+2017-03-18 08:58:10: App [index] with id [0] and pid [1707], exited with code [0] via signal [SIGINT]
+2017-03-18 08:58:10: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:11: App name:index id:0 online
+2017-03-18 08:58:11: Change detected on path js/php.js for app index - restarting
+2017-03-18 08:58:11: Stopping app:index id:0
+2017-03-18 08:58:11: App [index] with id [0] and pid [1724], exited with code [0] via signal [SIGINT]
+2017-03-18 08:58:11: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:11: App name:index id:0 online
+2017-03-18 08:58:12: Change detected on path assets for app index - restarting
+2017-03-18 08:58:12: Stopping app:index id:0
+2017-03-18 08:58:12: App [index] with id [0] and pid [1729], exited with code [0] via signal [SIGINT]
+2017-03-18 08:58:12: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:12: App name:index id:0 online
+2017-03-18 08:58:13: App [index] with id [0] and pid [2708], exited with code [255] via signal [SIGINT]
+2017-03-18 08:58:13: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:13: App name:index id:0 online
+2017-03-18 08:58:13: App [index] with id [0] and pid [3468], exited with code [255] via signal [SIGINT]
+2017-03-18 08:58:13: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:13: App name:index id:0 online
+2017-03-18 08:58:14: App [index] with id [0] and pid [3971], exited with code [255] via signal [SIGINT]
+2017-03-18 08:58:14: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:14: App name:index id:0 online
+2017-03-18 08:58:14: App [index] with id [0] and pid [4569], exited with code [255] via signal [SIGINT]
+2017-03-18 08:58:14: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:14: App name:index id:0 online
+2017-03-18 08:58:14: Change detected on path assets/css for app index - restarting
+2017-03-18 08:58:14: Stopping app:index id:0
+2017-03-18 08:58:14: App [index] with id [0] and pid [4942], exited with code [0] via signal [SIGINT]
+2017-03-18 08:58:14: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:14: App name:index id:0 online
+2017-03-18 08:58:14: Change detected on path assets/css/main.css for app index - restarting
+2017-03-18 08:58:14: Stopping app:index id:0
+2017-03-18 08:58:14: Proc is not defined anymore or is being killed
+2017-03-18 08:58:15: App [index] with id [0] and pid [5129], exited with code [0] via signal [SIGINT]
+2017-03-18 08:58:15: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:15: App name:index id:0 online
+2017-03-18 08:58:15: App [index] with id [0] and pid [5269], exited with code [255] via signal [SIGINT]
+2017-03-18 08:58:15: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:15: App name:index id:0 online
+2017-03-18 08:58:16: App [index] with id [0] and pid [5724], exited with code [255] via signal [SIGINT]
+2017-03-18 08:58:16: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:16: App name:index id:0 online
+2017-03-18 08:58:16: App [index] with id [0] and pid [6169], exited with code [255] via signal [SIGINT]
+2017-03-18 08:58:16: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:16: App name:index id:0 online
+2017-03-18 08:58:16: App [index] with id [0] and pid [6759], exited with code [255] via signal [SIGINT]
+2017-03-18 08:58:16: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:16: App name:index id:0 online
+2017-03-18 08:58:16: Change detected on path assets/img for app index - restarting
+2017-03-18 08:58:16: Stopping app:index id:0
+2017-03-18 08:58:16: Proc is not defined anymore or is being killed
+2017-03-18 08:58:16: App [index] with id [0] and pid [7129], exited with code [0] via signal [SIGINT]
+2017-03-18 08:58:17: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:17: App name:index id:0 online
+2017-03-18 08:58:17: Change detected on path assets/img/down_player.gif for app index - restarting
+2017-03-18 08:58:17: Stopping app:index id:0
+2017-03-18 08:58:17: App [index] with id [0] and pid [7241], exited with code [0] via signal [SIGINT]
+2017-03-18 08:58:17: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:17: App name:index id:0 online
+2017-03-18 08:58:17: App [index] with id [0] and pid [7409], exited with code [255] via signal [SIGINT]
+2017-03-18 08:58:17: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:17: App name:index id:0 online
+2017-03-18 08:58:17: App [index] with id [0] and pid [7563], exited with code [255] via signal [SIGINT]
+2017-03-18 08:58:17: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:17: App name:index id:0 online
+2017-03-18 08:58:17: App [index] with id [0] and pid [7751], exited with code [255] via signal [SIGINT]
+2017-03-18 08:58:17: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:17: App name:index id:0 online
+2017-03-18 08:58:17: App [index] with id [0] and pid [7930], exited with code [255] via signal [SIGINT]
+2017-03-18 08:58:17: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:17: App name:index id:0 online
+2017-03-18 08:58:17: Change detected on path assets/img/down.gif for app index - restarting
+2017-03-18 08:58:17: Stopping app:index id:0
+2017-03-18 08:58:17: App [index] with id [0] and pid [8074], exited with code [0] via signal [SIGINT]
+2017-03-18 08:58:18: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:18: App name:index id:0 online
+2017-03-18 08:58:18: App [index] with id [0] and pid [8249], exited with code [255] via signal [SIGINT]
+2017-03-18 08:58:18: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:18: App name:index id:0 online
+2017-03-18 08:58:18: App [index] with id [0] and pid [8640], exited with code [255] via signal [SIGINT]
+2017-03-18 08:58:18: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:18: App name:index id:0 online
+2017-03-18 08:58:19: App [index] with id [0] and pid [8661], exited with code [255] via signal [SIGINT]
+2017-03-18 08:58:19: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:19: App name:index id:0 online
+2017-03-18 08:58:19: Change detected on path assets/img/enviromnent_figure for app index - restarting
+2017-03-18 08:58:19: Stopping app:index id:0
+2017-03-18 08:58:19: App [index] with id [0] and pid [8670], exited with code [255] via signal [SIGINT]
+2017-03-18 08:58:19: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:19: App name:index id:0 online
+2017-03-18 08:58:19: Change detected on path assets/img/enviromnent_figure/rock.gif for app index - restarting
+2017-03-18 08:58:19: Stopping app:index id:0
+2017-03-18 08:58:19: App [index] with id [0] and pid [8684], exited with code [0] via signal [SIGINT]
+2017-03-18 08:58:19: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:19: App name:index id:0 online
+2017-03-18 08:58:19: Change detected on path assets/img/enviromnent_figure/tree.gif for app index - restarting
+2017-03-18 08:58:19: Stopping app:index id:0
+2017-03-18 08:58:19: App [index] with id [0] and pid [8685], exited with code [0] via signal [SIGINT]
+2017-03-18 08:58:19: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:19: App name:index id:0 online
+2017-03-18 08:58:20: Change detected on path assets/img/grama.gif for app index - restarting
+2017-03-18 08:58:20: Stopping app:index id:0
+2017-03-18 08:58:20: App [index] with id [0] and pid [8690], exited with code [0] via signal [SIGINT]
+2017-03-18 08:58:20: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:20: App name:index id:0 online
+2017-03-18 08:58:20: Change detected on path assets/img/left.gif for app index - restarting
+2017-03-18 08:58:20: Stopping app:index id:0
+2017-03-18 08:58:20: App [index] with id [0] and pid [8738], exited with code [0] via signal [SIGINT]
+2017-03-18 08:58:20: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:20: App name:index id:0 online
+2017-03-18 08:58:20: Change detected on path assets/img/right.gif for app index - restarting
+2017-03-18 08:58:20: Stopping app:index id:0
+2017-03-18 08:58:20: Proc is not defined anymore or is being killed
+2017-03-18 08:58:20: App [index] with id [0] and pid [8821], exited with code [0] via signal [SIGINT]
+2017-03-18 08:58:20: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:20: App name:index id:0 online
+2017-03-18 08:58:20: Change detected on path assets/img/up.gif for app index - restarting
+2017-03-18 08:58:20: Stopping app:index id:0
+2017-03-18 08:58:20: App [index] with id [0] and pid [8826], exited with code [0] via signal [SIGINT]
+2017-03-18 08:58:20: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:20: App name:index id:0 online
+2017-03-18 08:58:21: App [index] with id [0] and pid [8827], exited with code [255] via signal [SIGINT]
+2017-03-18 08:58:21: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:21: App name:index id:0 online
+2017-03-18 08:58:21: App [index] with id [0] and pid [8836], exited with code [255] via signal [SIGINT]
+2017-03-18 08:58:21: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:21: App name:index id:0 online
+2017-03-18 08:58:21: App [index] with id [0] and pid [8848], exited with code [255] via signal [SIGINT]
+2017-03-18 08:58:21: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:21: App name:index id:0 online
+2017-03-18 08:58:21: App [index] with id [0] and pid [8861], exited with code [255] via signal [SIGINT]
+2017-03-18 08:58:21: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:21: App name:index id:0 online
+2017-03-18 08:58:21: Change detected on path assets/js for app index - restarting
+2017-03-18 08:58:21: Stopping app:index id:0
+2017-03-18 08:58:21: App [index] with id [0] and pid [8870], exited with code [0] via signal [SIGINT]
+2017-03-18 08:58:22: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:22: App name:index id:0 online
+2017-03-18 08:58:22: Change detected on path assets/js/jquery.control_backup.js for app index - restarting
+2017-03-18 08:58:22: Stopping app:index id:0
+2017-03-18 08:58:22: App [index] with id [0] and pid [8875], exited with code [0] via signal [SIGINT]
+2017-03-18 08:58:22: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:22: App name:index id:0 online
+2017-03-18 08:58:22: Change detected on path assets/js/jquery.control.js for app index - restarting
+2017-03-18 08:58:22: Stopping app:index id:0
+2017-03-18 08:58:22: App [index] with id [0] and pid [8880], exited with code [0] via signal [SIGINT]
+2017-03-18 08:58:22: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:22: App name:index id:0 online
+2017-03-18 08:58:22: Change detected on path assets/js/jquery.grid.js for app index - restarting
+2017-03-18 08:58:22: Stopping app:index id:0
+2017-03-18 08:58:22: App [index] with id [0] and pid [8885], exited with code [0] via signal [SIGINT]
+2017-03-18 08:58:22: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:22: App name:index id:0 online
+2017-03-18 08:58:22: Change detected on path assets/js/jquery.js for app index - restarting
+2017-03-18 08:58:22: Stopping app:index id:0
+2017-03-18 08:58:22: Proc is not defined anymore or is being killed
+2017-03-18 08:58:22: App [index] with id [0] and pid [8890], exited with code [0] via signal [SIGINT]
+2017-03-18 08:58:22: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:22: App name:index id:0 online
+2017-03-18 08:58:22: Change detected on path assets/js/jquery.js for app index - restarting
+2017-03-18 08:58:22: Stopping app:index id:0
+2017-03-18 08:58:22: App [index] with id [0] and pid [8900], exited with code [0] via signal [SIGINT]
+2017-03-18 08:58:22: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:22: App name:index id:0 online
+2017-03-18 08:58:22: Change detected on path assets/js/jquery.js for app index - restarting
+2017-03-18 08:58:22: Stopping app:index id:0
+2017-03-18 08:58:22: Proc is not defined anymore or is being killed
+2017-03-18 08:58:22: App [index] with id [0] and pid [8905], exited with code [0] via signal [SIGINT]
+2017-03-18 08:58:22: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:22: App name:index id:0 online
+2017-03-18 08:58:22: Change detected on path assets/js/jquery.js for app index - restarting
+2017-03-18 08:58:22: Stopping app:index id:0
+2017-03-18 08:58:22: Proc is not defined anymore or is being killed
+2017-03-18 08:58:22: App [index] with id [0] and pid [8910], exited with code [0] via signal [SIGINT]
+2017-03-18 08:58:23: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:23: App name:index id:0 online
+2017-03-18 08:58:23: Change detected on path assets/js/jquery.js for app index - restarting
+2017-03-18 08:58:23: Stopping app:index id:0
+2017-03-18 08:58:23: Proc is not defined anymore or is being killed
+2017-03-18 08:58:23: App [index] with id [0] and pid [8921], exited with code [0] via signal [SIGINT]
+2017-03-18 08:58:23: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:23: App name:index id:0 online
+2017-03-18 08:58:23: Change detected on path assets/js/jquery.js for app index - restarting
+2017-03-18 08:58:23: Stopping app:index id:0
+2017-03-18 08:58:23: Proc is not defined anymore or is being killed
+2017-03-18 08:58:23: App [index] with id [0] and pid [8973], exited with code [0] via signal [SIGINT]
+2017-03-18 08:58:23: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:23: App name:index id:0 online
+2017-03-18 08:58:23: Change detected on path assets/js/jquery.js for app index - restarting
+2017-03-18 08:58:23: Stopping app:index id:0
+2017-03-18 08:58:23: Proc is not defined anymore or is being killed
+2017-03-18 08:58:23: App [index] with id [0] and pid [9024], exited with code [0] via signal [SIGINT]
+2017-03-18 08:58:23: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:23: App name:index id:0 online
+2017-03-18 08:58:23: Change detected on path assets/js/jquery.setting.js for app index - restarting
+2017-03-18 08:58:23: Stopping app:index id:0
+2017-03-18 08:58:23: Proc is not defined anymore or is being killed
+2017-03-18 08:58:23: App [index] with id [0] and pid [9069], exited with code [0] via signal [SIGINT]
+2017-03-18 08:58:23: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:23: App name:index id:0 online
+2017-03-18 08:58:23: Change detected on path assets/js/jquery.socketio.js for app index - restarting
+2017-03-18 08:58:23: Stopping app:index id:0
+2017-03-18 08:58:23: App [index] with id [0] and pid [9074], exited with code [0] via signal [SIGINT]
+2017-03-18 08:58:23: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:23: App name:index id:0 online
+2017-03-18 08:58:23: Change detected on path assets/js/jquery.users.js for app index - restarting
+2017-03-18 08:58:23: Stopping app:index id:0
+2017-03-18 08:58:23: Proc is not defined anymore or is being killed
+2017-03-18 08:58:23: App [index] with id [0] and pid [9079], exited with code [0] via signal [SIGINT]
+2017-03-18 08:58:23: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:23: App name:index id:0 online
+2017-03-18 08:58:23: App [index] with id [0] and pid [9084], exited with code [255] via signal [SIGINT]
+2017-03-18 08:58:23: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:23: App name:index id:0 online
+2017-03-18 08:58:24: App [index] with id [0] and pid [9219], exited with code [255] via signal [SIGINT]
+2017-03-18 08:58:24: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:24: App name:index id:0 online
+2017-03-18 08:58:24: App [index] with id [0] and pid [9232], exited with code [255] via signal [SIGINT]
+2017-03-18 08:58:24: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:24: App name:index id:0 online
+2017-03-18 08:58:24: App [index] with id [0] and pid [9241], exited with code [255] via signal [SIGINT]
+2017-03-18 08:58:24: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:24: App name:index id:0 online
+2017-03-18 08:58:24: App [index] with id [0] and pid [9250], exited with code [255] via signal [SIGINT]
+2017-03-18 08:58:24: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:24: App name:index id:0 online
+2017-03-18 08:58:24: App [index] with id [0] and pid [9259], exited with code [255] via signal [SIGINT]
+2017-03-18 08:58:24: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:24: App name:index id:0 online
+2017-03-18 08:58:25: App [index] with id [0] and pid [9268], exited with code [255] via signal [SIGINT]
+2017-03-18 08:58:25: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:25: App name:index id:0 online
+2017-03-18 08:58:25: App [index] with id [0] and pid [9281], exited with code [255] via signal [SIGINT]
+2017-03-18 08:58:25: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:25: App name:index id:0 online
+2017-03-18 08:58:25: App [index] with id [0] and pid [9290], exited with code [255] via signal [SIGINT]
+2017-03-18 08:58:25: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:25: App name:index id:0 online
+2017-03-18 08:58:25: App [index] with id [0] and pid [9299], exited with code [255] via signal [SIGINT]
+2017-03-18 08:58:25: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:25: App name:index id:0 online
+2017-03-18 08:58:26: App [index] with id [0] and pid [9308], exited with code [255] via signal [SIGINT]
+2017-03-18 08:58:26: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:26: App name:index id:0 online
+2017-03-18 08:58:26: App [index] with id [0] and pid [9317], exited with code [255] via signal [SIGINT]
+2017-03-18 08:58:26: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:26: App name:index id:0 online
+2017-03-18 08:58:26: App [index] with id [0] and pid [9329], exited with code [255] via signal [SIGINT]
+2017-03-18 08:58:26: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:26: App name:index id:0 online
+2017-03-18 08:58:26: App [index] with id [0] and pid [9338], exited with code [255] via signal [SIGINT]
+2017-03-18 08:58:26: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 08:58:26: App name:index id:0 online
+2017-03-18 08:58:26: App [index] with id [0] and pid [9347], exited with code [255] via signal [SIGINT]
+2017-03-18 08:58:26: Script /home/magicraft/apps_nodejs/index.js had too many unstable restarts (16). Stopped. "errored"
+2017-03-18 09:05:29: [Watch] Stop watching 0
+2017-03-18 09:05:29: Stopping app:index id:0
+2017-03-18 09:11:09: [Watch] Start watching 0
+2017-03-18 09:11:09: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 09:11:09: App name:index id:0 online
+2017-03-18 09:11:41: Change detected on path index_safe_save_091142.js for app index - restarting
+2017-03-18 09:11:41: Stopping app:index id:0
+2017-03-18 09:11:41: App [index] with id [0] and pid [50495], exited with code [0] via signal [SIGINT]
+2017-03-18 09:11:41: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 09:11:41: App name:index id:0 online
+2017-03-18 09:11:42: Change detected on path index.js for app index - restarting
+2017-03-18 09:11:42: Stopping app:index id:0
+2017-03-18 09:11:42: Proc is not defined anymore or is being killed
+2017-03-18 09:11:42: App [index] with id [0] and pid [57835], exited with code [0] via signal [SIGINT]
+2017-03-18 09:11:42: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 09:11:42: App name:index id:0 online
+2017-03-18 09:13:18: Change detected on path index.js for app index - restarting
+2017-03-18 09:13:18: Stopping app:index id:0
+2017-03-18 09:13:18: App [index] with id [0] and pid [57840], exited with code [0] via signal [SIGINT]
+2017-03-18 09:13:18: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-18 09:13:18: App name:index id:0 online

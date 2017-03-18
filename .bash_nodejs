@@ -1,0 +1,17 @@
+# BashNodeJS auto-generated * DO NOT EDIT * 
+echo -e 'Diretorio principal de apps: \033[1;32m~/apps_nodejs/\033[0m' >& /dev/null
+echo -e 'Diretorio principal de logs: \033[1;32m~/.pm2/logs/\033[0m' >& /dev/null
+echo -e 'npm config set prefix \033[1;32m~/npmlib\033[0m realizado' >& /dev/null
+echo -e 'npm \033[1;32minstall\033[0m <module>' >& /dev/null
+echo -e 'npm \033[1;32minstall\033[0m <module> -g' >& /dev/null
+echo -e 'Comandos uteis do PM2:' >& /dev/null
+echo -e 'pm2 \033[1;32mstart\033[0m <app.js>' >& /dev/null
+echo -e 'pm2 \033[1;32mstop\033[0m <app.js>' >& /dev/null
+echo -e 'pm2 \033[1;32minfo\033[0m <app.js>' >& /dev/null
+echo -e 'pm2 \033[1;32msave\033[0m' >& /dev/null
+echo -e 'pm2 \033[1;32mressurect\033[0m' >& /dev/null
+echo -e 'pm2 \033[1;32mmonit\033[0m' >& /dev/null
+echo -e 'pm2 \033[1;32mkill\033[0m' >& /dev/null
+export PATH=$PATH:/opt/nodejs/4.4/bin:/home/magicraft/npmlib/bin
+npm config set prefix '~/npmlib'
+export PORT_INDEX=21288
