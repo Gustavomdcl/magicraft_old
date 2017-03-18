@@ -42,6 +42,12 @@ io.on('connection', function(socket){
   });
 });
 
-http.listen(21288, function(){  
+/*http.listen(21288, function(){  
   console.log('servidor rodando em localhost:21288');
-});
+});*/
+
+http.createServer(function (req, res) {
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('Hello Node I am a wizard\n');
+  console.log('gordin');
+}).listen(process.env.PORT_INDEX);
