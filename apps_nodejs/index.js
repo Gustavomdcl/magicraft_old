@@ -42,8 +42,8 @@ io.on('connection', function(socket){
   });
 });
 
-http.listen(21288, function(){  
-  console.log('servidor rodando em localhost:21288');
+http.listen(process.env.PORT_INDEX, function(){  
+  console.log('Server running at :'+process.env.PORT_INDEX);
 });
 
 /*var http = require('http');
