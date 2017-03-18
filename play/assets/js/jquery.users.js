@@ -42,12 +42,12 @@ function user_placement(position_x, position_y, this_name, vetor) {
 
 function user_vetor(destination, thisName) {
 	if(destination=='right'){
-		$('.'+thisName).css('background-image','url(http://localhost/magicraft/www/play/assets/img/right.gif)');
+		$('.'+thisName).css('background-image','url(assets/img/right.gif)');
 	} else if(destination=='left'){
-		$('.'+thisName).css('background-image','url(http://localhost/magicraft/www/play/assets/img/left.gif)');
+		$('.'+thisName).css('background-image','url(assets/img/left.gif)');
 	} else if(destination=='up'){
-		$('.'+thisName).css('background-image','url(http://localhost/magicraft/www/play/assets/img/up.gif)');
+		$('.'+thisName).css('background-image','url(assets/img/up.gif)');
 	} else if(destination=='down'){
-		$('.'+thisName).css('background-image','url(http://localhost/magicraft/www/play/assets/img/down.gif)');
+		$('.'+thisName).css('background-image','url(assets/img/down.gif)');
 	}
 }
