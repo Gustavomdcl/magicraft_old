@@ -4,7 +4,7 @@
 
 var column = 5;
 var line = 5;
-var square = 100;
+var square = 50;
 var grid_column = new Array();
 
 /* ========== Structure The Grid ========== */
