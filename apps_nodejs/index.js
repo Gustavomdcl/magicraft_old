@@ -1,11 +1,10 @@
-//var app = require('express')();  
-//var http = require('http').Server(app);  
-var http = require('http');  
+var app = require('express')();  
+var http = require('http').Server(app);  
 var io = require('socket.io')(http);
 
-/*app.get('/', function(req, res){  
+app.get('/', function(req, res){  
   res.sendFile(__dirname + '/index.html');
-});*/
+});
 
 //Storage
 var allConnectedClients = Object.keys(io.sockets.connected);
@@ -43,10 +42,6 @@ io.on('connection', function(socket){
   });
 });
 
-/*http.listen(21288, function(){  
-  console.log('servidor rodando em localhost:21288');
-});*/
-
-http.createServer(function (req, res) {
-  res.sendFile(__dirname + '/index.html');
-}).listen(process.env.PORT_INDEX);
+http.listen(80, function(){  
+  console.log('servidor rodando em localhost:80');
+});
