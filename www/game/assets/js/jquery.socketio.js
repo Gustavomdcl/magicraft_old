@@ -45,7 +45,7 @@ socket.on('user change', function(user_data){
 
 //User logout
 socket.on('logout user', function(user_data){
-	if (user_data.split('/')[0]!=user_name) {
+	if (user_data.split('/')[2]!=user_name) {
 		alert(user_data);
 		var thisUserName = user_data.split('/')[0];
 		alert('x = '+$('.'+thisUserName).data('x')+' e y = '+$('.'+thisUserName).data('y')+' e nome = .'+thisUserName);
