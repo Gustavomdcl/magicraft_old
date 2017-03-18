@@ -1,10 +1,11 @@
-var app = require('express')();  
-var http = require('http').Server(app);  
+//var app = require('express')();  
+//var http = require('http').Server(app);  
+var http = require('http');  
 var io = require('socket.io')(http);
 
-app.get('/', function(req, res){  
+/*app.get('/', function(req, res){  
   res.sendFile(__dirname + '/index.html');
-});
+});*/
 
 //Storage
 var allConnectedClients = Object.keys(io.sockets.connected);
@@ -47,7 +48,5 @@ io.on('connection', function(socket){
 });*/
 
 http.createServer(function (req, res) {
-  res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.end('Hello Node I am a wizard\n');
-  console.log('gordin');
+  res.sendFile(__dirname + '/index.html');
 }).listen(process.env.PORT_INDEX);
