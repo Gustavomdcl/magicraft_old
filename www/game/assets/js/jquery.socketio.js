@@ -47,8 +47,8 @@ socket.on('user change', function(user_data){
 socket.on('logout user', function(user_data){
 	if (user_data.split('/')[0]!=user_name) {
 		var thisUserName = user_data.split('/')[0];
-		alert($('.'+thisUserName).data('y'));
-		work_grid($('.'+thisUserName).data('x'), parseInt($('.'+thisUserName).data('y'),10), 'null');
+		alert('x = '+$('.'+thisUserName).data('x')+' e y = '+$('.'+thisUserName).data('y')+' e nome = .'+thisUserName);
+		work_grid($('.'+thisUserName).data('x'), $('.'+thisUserName).data('y'), 'null');
 		$('.'+thisUserName).remove();
 	}
 });
