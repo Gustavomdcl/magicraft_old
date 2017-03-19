@@ -1,15 +1,10 @@
 var app = require('express')();  
-var http = require('http');  
+var http = require('http').Server(app);  
+var io = require('socket.io')(http);
 
 app.get('/', function(req, res){  
   res.sendFile(__dirname + '/index.html');
 });
-
-var server = http.createServer(app).listen(app.get(process.env.PORT_INDEX), function(){
-  console.log("Express server listening on port " + app.get(process.env.PORT_INDEX));
-});
-
-var io = socket.listen(server);
 
 //Storage
 var allConnectedClients = Object.keys(io.sockets.connected);
@@ -47,9 +42,9 @@ io.on('connection', function(socket){
   });
 });
 
-/*http.listen(process.env.PORT_INDEX, function(){  
-  console.log('Server running at :'+process.env.PORT_INDEX);
-});*/
+http.listen(21288, function(){  
+  console.log('Server running at :'+21288);
+});
 
 /*var http = require('http');
 http.createServer(function (req, res) {
