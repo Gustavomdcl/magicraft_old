@@ -42,7 +42,7 @@ io.on('connection', function(socket){
   });
 });
 
-io.listen(process.env.PORT_INDEX, function(){  
+http.listen(process.env.PORT_INDEX, function(){  
   console.log('Server running at :'+process.env.PORT_INDEX);
 });
 
