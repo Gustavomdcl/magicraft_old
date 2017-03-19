@@ -1,7 +1,7 @@
 var app = require('express')();  
 
 app.get('/', function(req, res){  
-  res.sendFile(__dirname + ':21288/index.html');
+  res.sendFile(__dirname + '/index.html');
 });
 
 var http = require('http').createServer(app);  
