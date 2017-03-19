@@ -1,9 +1,9 @@
-var app = require('express');  
-var http = express();  
+var app = require('express')();  
+var http = require('http').createServer(app);  
 //var io = require('socket.io')(http, { path: '/play/socket.io'});
-var io = require('socket.io').listen(server);
+var io = require('socket.io')(http, { path: '/play/'});
 
-http.get('/', function(req, res){  
+app.get('/', function(req, res){  
   res.sendFile(__dirname + '/index.html');
 });
 
@@ -43,7 +43,7 @@ io.on('connection', function(socket){
   });
 });
 
-var server = http.listen(process.env.PORT_INDEX, function(){  
+http.listen(process.env.PORT_INDEX, function(){  
   console.log('Server running at :'+process.env.PORT_INDEX);
 });
 
