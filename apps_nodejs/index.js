@@ -42,7 +42,9 @@ io.on('connection', function(socket){
   });
 });
 
-http.listen(21288, 'localhost');
+http.listen(process.env.PORT_INDEX, function(){  
+  console.log('Server running at :'+process.env.PORT_INDEX);
+});
 
 /*var http = require('http');
 http.createServer(function (req, res) {
