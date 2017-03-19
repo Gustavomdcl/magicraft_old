@@ -1,5 +1,10 @@
 var app = require('express')();  
 var http = require('http').createServer(app);  
+
+http.listen(process.env.PORT_INDEX, function(){  
+  console.log('Server running at :'+process.env.PORT_INDEX);
+});
+
 var io = require('socket.io')(http);
 
 app.get('/', function(req, res){  
@@ -40,10 +45,6 @@ io.on('connection', function(socket){
     console.log('message: ' + user_data);
     io.sockets.emit('user change', user_data);
   });
-});
-
-http.listen(process.env.PORT_INDEX, function(){  
-  console.log('Server running at :'+process.env.PORT_INDEX);
 });
 
 /*var http = require('http');
