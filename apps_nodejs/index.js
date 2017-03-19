@@ -1,15 +1,16 @@
 var app = require('express')();  
+
+app.get(':21288/', function(req, res){  
+  res.sendFile(__dirname + '/index.html');
+});
+
 var http = require('http').createServer(app);  
 
-http.listen(app.get(process.env.PORT_INDEX), function(){  
+http.listen(process.env.PORT_INDEX, function(){  
   console.log('Server running at :'+process.env.PORT_INDEX);
 });
 
 var io = require('socket.io')(http);
-
-app.get('/', function(req, res){  
-  res.sendFile(__dirname + '/index.html');
-});
 
 //Storage
 var allConnectedClients = Object.keys(io.sockets.connected);
