@@ -1,9 +1,8 @@
 var app = require('express')();  
-var http = require('http').Server(app);  
-var index = fs.readFileSync(__dirname + '/index.html');
+var http = require('http').Server(app);
 var server = http.createServer(function(req, res) {
       res.writeHead(200, {'Content-Type': 'text/html'});
-      res.end(index);
+      res.end(__dirname + '/index.html');
 });
 var io = require('socket.io').listen(server);
 
