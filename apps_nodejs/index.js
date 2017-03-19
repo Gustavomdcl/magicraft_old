@@ -1,15 +1,10 @@
 var app = require('express')();  
-var http = require('http').Server(app); 
+var http = require('http').Server(app);  
+var io = require('socket.io')(http);
 
 app.get('/', function(req, res){  
   res.sendFile(__dirname + '/index.html');
 });
-
-var server = http.listen(process.env.PORT_INDEX, function(){  
-  console.log('Server running at :'+process.env.PORT_INDEX);
-});
-
-var io = require('socket.io').listen(server);
 
 //Storage
 var allConnectedClients = Object.keys(io.sockets.connected);
@@ -45,6 +40,10 @@ io.on('connection', function(socket){
     console.log('message: ' + user_data);
     io.sockets.emit('user change', user_data);
   });
+});
+
+io.listen(process.env.PORT_INDEX, function(){  
+  console.log('Server running at :'+process.env.PORT_INDEX);
 });
 
 /*var http = require('http');
