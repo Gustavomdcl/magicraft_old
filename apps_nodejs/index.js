@@ -42,9 +42,7 @@ io.on('connection', function(socket){
   });
 });
 
-http.listen(21288, function(){  
-  console.log('Server running at :'+21288);
-});
+http.listen(21288, 'localhost');
 
 /*var http = require('http');
 http.createServer(function (req, res) {
