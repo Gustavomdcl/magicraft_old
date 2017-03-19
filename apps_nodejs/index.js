@@ -5,14 +5,8 @@ app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
 });
 
-/*var server = http.listen(process.env.PORT_INDEX, function(){  
+var server = http.listen(process.env.PORT_INDEX, function(){  
   console.log('Server running at :'+process.env.PORT_INDEX);
-});*/
-
-var server = app.listen(process.env.PORT_INDEX, function () {
-  var host = server.address().address;
-  var port = server.address().port;
-  console.log('PHPExpress app listening at http://%s:%s', host, port);
 });
 
 var io = require('socket.io').listen(server);
