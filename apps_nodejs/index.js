@@ -1,7 +1,7 @@
 var app = require('express')();  
 var http = require('http').createServer(app);  
 
-http.listen(process.env.PORT_INDEX, function(){  
+http.listen(app.get(process.env.PORT_INDEX), function(){  
   console.log('Server running at :'+process.env.PORT_INDEX);
 });
 
