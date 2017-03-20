@@ -1,3 +1,4 @@
+<IfModule mod_rewrite.c>
 RewriteEngine On 
-RewriteCond %{SERVER_PORT} 21288
-RewriteCond %{REQUEST_URI} ^/play
+RewriteCond %{SERVER_NAME} ^21288$
+RewriteRule .* http://magicraft.life/play/ [L,R]
