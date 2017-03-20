@@ -1,4 +1,0 @@
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^magicraft.life:21288$ [OR]
-RewriteCond %{HTTP_HOST} ^www.magicraft.life:21288$
-RewriteRule ^.*$ "http\:\/\/127\.0\.0\.1\:80/play/%{REQUEST_URI}" [P,QSA,L]
