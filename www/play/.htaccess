@@ -2,3 +2,4 @@
 RewriteEngine On 
 RewriteCond %{SERVER_NAME} ^21288$
 RewriteRule .* http://magicraft.life/play/ [L,R]
+</IfModule>
