@@ -1,5 +1,5 @@
-<IfModule mod_rewrite.c>
-RewriteEngine On 
-RewriteCond %{SERVER_NAME} ^21288$
-RewriteRule .* http://magicraft.life/play/ [L,R]
-</IfModule>
+<?php
+
+header("Location: magicraft.life/play", true, 301);
+exit();
+?>
