@@ -1,5 +1,0 @@
-<?php
-
-header("Location: magicraft.life/play", true, 301);
-exit();
-?>
