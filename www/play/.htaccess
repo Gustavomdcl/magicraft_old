@@ -1,0 +1,3 @@
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 21288
+RewriteCond %{REQUEST_URI} ^/play
