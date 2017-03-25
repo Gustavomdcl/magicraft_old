@@ -43,55 +43,9 @@ io.on('connection', function(socket){
   });
 });
 
-/*http.listen(process.env.PORT_INDEX, function(){  
-  console.log('Server running at :'+process.env.PORT_INDEX);
-});*/
-
 http.listen('21288', function(){  
   console.log('Server running at :'+'21288');
 });
-
-/* ==== MYSQL ==== */
-
-//https://www.npmjs.com/package/mysql
-
-var mysql      = require('mysql');
-var connection = mysql.createConnection({
-  host     : 'mysql.magicraft.life',
-  user     : 'magicraft',
-  password : 'P0tt3rPlay666',
-  database : 'magicraft'
-});
- 
-connection.connect(function(err) {
-  if (err) {
-    console.error('error connecting: ' + err.stack);
-    return;
-  }
- 
-  console.log('connected as id ' + connection.threadId);
-});
-
-var userEmail = 'gustavomdcl@gmail.com'
-var userSelection = "SELECT * FROM PP_USER WHERE email = '"+userEmail+"'";
-
-connection.query(userSelection, function (error, results, fields) {
-  if (error) {
-    throw error;
-  } else {
-    if(results!=''){
-      console.log(
-        'The results * from the table PP_USER where the email is the userEmail are: '+
-        'id: '+ results[0].id+
-        '; name: '+ results[0].name+
-        '; email: '+ results[0].email+
-        '; user: '+ results[0].user + ';'
-      );
-    }
-  }
-});
- 
-connection.end();
 
 /*var http = require('http');
 http.createServer(function (req, res) {
@@ -99,5 +53,5 @@ http.createServer(function (req, res) {
   res.end('Hello Node\n');
   res.end('I am a wizard\n');
   console.log('gordin');
-}).listen(process.env.PORT_INDEX);
+}).listen('21288');
 console.log('Server running at :'+process.env.PORT_INDEX);*/
