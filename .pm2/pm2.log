@@ -1003,3 +1003,8 @@
 2017-03-25 09:32:32: App [index] with id [0] and pid [26729], exited with code [0] via signal [SIGINT]
 2017-03-25 09:32:32: Starting execution sequence in -fork mode- for app name:index id:0
 2017-03-25 09:32:32: App name:index id:0 online
+2017-03-25 22:46:24: Change detected on path index.js for app index - restarting
+2017-03-25 22:46:24: Stopping app:index id:0
+2017-03-25 22:46:24: App [index] with id [0] and pid [35408], exited with code [0] via signal [SIGINT]
+2017-03-25 22:46:25: Starting execution sequence in -fork mode- for app name:index id:0
+2017-03-25 22:46:25: App name:index id:0 online

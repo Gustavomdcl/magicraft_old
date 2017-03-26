@@ -26,3 +26,8 @@ git commit -m "Git do servidor"
 git push origin master
 git status
 git pull origin master
+git status
+git pull origin master
+git add .
+git commit -m "lances do servidor"
+git push origin master
