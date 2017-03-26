@@ -11,24 +11,25 @@ var grid_column = new Array();
 
 var grid_width = column*square;
 var grid_height = line*square;
+create_grid();
+function create_grid() {
 
-$('#grid').css('width',grid_width);
-$('#grid').css('height',grid_height);
+	$('#grid').css('width',grid_width);
+	$('#grid').css('height',grid_height);
 
-/* ========== Calculate The Grid ========== */
-
-for (var i = 0; i < column; i++) {//column
-	grid_column.push({
-		"position_x": i*square,
-		"grid_line": new Array()
-	});
-	for (var j = 0; j < line; j++) {//line
-		grid_column[i].grid_line.push({ 
-			"state": 'null',
-			"position_y": j*square
+	for (var i = 0; i < column; i++) {//column
+		grid_column.push({
+			"position_x": i*square,
+			"grid_line": new Array()
 		});
-		//function to visualy create the grid
-		gridLines(grid_column[i].position_x, grid_column[i].grid_line[j].position_y);
+		for (var j = 0; j < line; j++) {//line
+			grid_column[i].grid_line.push({ 
+				"state": 'null',
+				"position_y": j*square
+			});
+			//function to visualy create the grid
+			gridLines(grid_column[i].position_x, grid_column[i].grid_line[j].position_y);
+		}
 	}
 }
 

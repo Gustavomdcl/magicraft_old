@@ -20,33 +20,6 @@ connection.connect(function(err) {
     return;
   }
 });
-
-function userLogin(userEmail, userPassword){
-  userPassword = crypto.createHash('md5').update(userPassword).digest("hex"); //senha md5
-  console.log(userPassword);
-  var userSelection = "SELECT * FROM `PP_USER` WHERE `email` = '"+userEmail+"' AND `password` = '"+userPassword+"' LIMIT 1";
-  connection.query(userSelection, function (error, results, fields) {
-    if (error) {
-      throw error;
-    } else {
-      if(results!=''){
-        //Login Succeeded
-        console.log(
-          'The results are: '+
-          'id: '+ results[0].id+
-          '; name: '+ results[0].name+
-          '; email: '+ results[0].email+
-          '; user: '+ results[0].user + ';'
-        );
-      } else {
-        //Login Failed
-        console.log('Login Failed');
-      }
-    }
-  });
-}
-
-userLogin('gustavomdcl@gmail.com', '1234sucesso');
  
 //connection.end();
 
@@ -59,7 +32,7 @@ io.sockets.on('connection', function (client) {
     for (var i = 0, len = allConnectedClients.length; i < len; i++) {
       client.emit('first user', currentConnections[allConnectedClients[i]].clientData);
     }
-    client.emit('start placement', 'start');
+    //client.emit('start placement', 'start');
     currentConnections[client.id] = {socket: client};
     client.on('data', function (somedata) {
         currentConnections[client.id].clientData = somedata; 
@@ -77,7 +50,27 @@ io.on('connection', function(socket){
   socket.on('user change', function(user_data){
     io.sockets.emit('user change', user_data);
   });
+  socket.on('socket login', function(loginData){
+    var userEmail = loginData.split('/')[0];
+    var userPassword = crypto.createHash('md5').update(loginData.split('/')[1]).digest("hex"); //senha md5
+    var userSelection = "SELECT * FROM `PP_USER` WHERE `email` = '"+userEmail+"' AND `password` = '"+userPassword+"' LIMIT 1";
+    connection.query(userSelection, function (error, results, fields) {
+     if (error) {
+        throw error;
+      } else {
+         if(results!=''){
+          //Login Succeeded
+          socket.emit('start placement', results[0].user);
+        } else {
+          //Login Failed
+          socket.emit('failed login', null);
+        }
+      }
+    });
+  });
 });
+
+//.split('/')[0]
 
 /* ==== Cria Servidor na porta ==== */
 

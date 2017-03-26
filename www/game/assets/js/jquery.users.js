@@ -2,8 +2,8 @@
 
 /* ========== Place This User ========== */
 var user_placed = false;
-var user_name = '';
-var possible = 'abcdefghijklmnopqrstuvwxyz0123456789';
+//var user_name = '';
+//var possible = 'abcdefghijklmnopqrstuvwxyz0123456789';
 var user_x, user_y;
 var grid_middle_x = parseInt(column/2);
 var grid_middle_y = parseInt(line/2);
@@ -11,9 +11,9 @@ var grid_middle_y = parseInt(line/2);
 var loading_top;
 var loading_left;
 function place_this_user(){
-	for( var i=0; i < 3; i++ ) {
-		user_name += possible.charAt(Math.floor(Math.random() * possible.length));
-	}
+	//for( var i=0; i < 3; i++ ) {
+	//	user_name += possible.charAt(Math.floor(Math.random() * possible.length));
+	//}
 	for(var a = grid_middle_x; a < column; a++){//column
 		loading_left = (a-grid_middle_x)*square;
 		loading_top=0;
@@ -36,7 +36,7 @@ function place_this_user(){
 
 function user_placement(position_x, position_y, this_name, vetor) {
 	var thisPositions = work_grid(position_x, position_y, this_name);
-	$('#grid').append('<div class="user '+this_name+'" data-x="'+position_x+'" data-y="'+position_y+'" style="width:'+(square-1)+'px;height:'+(square-1)+'px;left:'+thisPositions.position_x+'px;top:'+thisPositions.position_y+'px;">you</div>');
+	$('#grid').append('<div class="user '+this_name+'" data-x="'+position_x+'" data-y="'+position_y+'" style="width:'+(square-1)+'px;height:'+(square-1)+'px;left:'+thisPositions.position_x+'px;top:'+thisPositions.position_y+'px;"><span>'+this_name+'</span></div>');
 	user_vetor(vetor, this_name)
 }
 
