@@ -25,7 +25,7 @@
 	    $mensagemHTML = utf8_decode(
 	    	'<p>Hello, ' . $nome . '.</p>
 		    <p>You are trying to change your password, right?</p>
-		    <p>To continue click on <a href="http://agenciawebnauta.com.br/bibliotecaPHP/alterar-senha.php?usuario=' . $usuarioAlterar . '&code=' . $senha . '" target="_blank">agenciawebnauta.com.br/bibliotecaPHP/alterar-senha.php?usuario='.$usuarioAlterar.'&code=' . $senha . '</a> and insert your new password</p>
+		    <p>To continue click on <a href="http://magicraft.life/alterar-senha.php?usuario=' . $usuarioAlterar . '&code=' . $senha . '" target="_blank">agenciawebnauta.com.br/bibliotecaPHP/alterar-senha.php?usuario='.$usuarioAlterar.'&code=' . $senha . '</a> and insert your new password</p>
 		    <p>If you did not want to change your password, ignore it.</p>
 		    <p>Thanks.</p>
 		    <br>

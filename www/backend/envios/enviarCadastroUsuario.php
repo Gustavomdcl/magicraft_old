@@ -29,7 +29,7 @@
 		    $mensagemHTML = utf8_decode(
 			    '<p>Hello, ' . $nome . ' , thank you for your registration!</p>
 			    <p>Please click on the link bellow to validate your account:</p>
-				<p><a href="http://agenciawebnauta.com.br/bibliotecaPHP/backend/envios/validaUsuario.php?email=' . $email . '&code=' . $senha . '" target="_blank">http://agenciawebnauta.com.br/bibliotecaPHP/backend/envios/validaUsuario.php?email=' . $email . '&code=' . $senha . '</a></p>
+				<p><a href="http://magicraft.life/backend/envios/validaUsuario.php?email=' . $email . '&code=' . $senha . '" target="_blank">http://magicraft.life/backend/envios/validaUsuario.php?email=' . $email . '&code=' . $senha . '</a></p>
 			    <p>Thanks.</p>
 			    <br>
 			    <p>MagiCraft.</p>

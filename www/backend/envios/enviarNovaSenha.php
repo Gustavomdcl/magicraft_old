@@ -23,7 +23,7 @@
 		    '<p>Hello, ' . $nome . '.</p>
 		    <p>Your password has been changed</p>
 		    <p>To login click on the link bellow:</p>
-			<p><a href="http://http://agenciawebnauta.com.br/bibliotecaPHP/" target="_blank">http://http://agenciawebnauta.com.br/bibliotecaPHP/</a></p>
+			<p><a href="http://magicraft.life/" target="_blank">http://magicraft.life/</a></p>
 			<p>Thanks.</p>
 		    <br>
 		    <p>MagiCraft.</p>
