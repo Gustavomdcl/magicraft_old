@@ -60,10 +60,24 @@ io.on('connection', function(socket){
       } else {
          if(results!=''){
           //Login Succeeded
-          socket.emit('start placement', results[0].user);
+          var loggedUser = false;
+          //Verify if user is already logged in by looking for every single user
+          for (var i = 0, len = allConnectedClients.length; i < len; i++) {
+            if(currentConnections[allConnectedClients[i]].clientData!=undefined){
+              if(currentConnections[allConnectedClients[i]].clientData.split('/')[2]==results[0].user) {
+                //If user is logged in
+                loggedUser = true;
+              }
+            }
+          }
+          if(loggedUser == false){
+            socket.emit('start placement', results[0].user);
+          } else {
+            socket.emit('failed login', 'Usuário logado em outra janela');
+          }
         } else {
           //Login Failed
-          socket.emit('failed login', null);
+          socket.emit('failed login', 'Email ou senha incorretos');
         }
       }
     });

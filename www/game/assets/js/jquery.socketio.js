@@ -24,7 +24,7 @@ socket.on('start placement', function(user_data){
 
 socket.on('failed login', function(user_data){
 	$('.login-error').remove();
-	$('form#login_form').append('<p class="login-error">Login errado</p>');
+	$('form#login_form').append('<p class="login-error">'+user_data+'</p>');
 });
 
 //Send user data
