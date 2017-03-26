@@ -28,6 +28,7 @@
 
   <h1>Painel</h1>
   <p>Olá <?php echo $nome; ?>. Seu email é <?php echo $email; ?> e seu id é <?php echo $profile_id; ?></p>
+  <p><a href="http://magicraft.life:21288/">Clique aqui para jogar</a></p>
   <a href="sair.php">Sair</a>
 
   <?php 
